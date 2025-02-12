@@ -35,7 +35,7 @@ module APB_slave #(parameter WIDTH = 8,SIZE = 256) (
     output reg [7:0] prdata
     );
     
-    reg [WIDTH-1:0] memory [SIZE-1:0];
+    reg [WIDTH-1:0] memory [0:SIZE-1];
     assign PREADY = (PENABLE & PSEL1);
     
     always @(posedge PCLK or negedge PRESETn) begin
