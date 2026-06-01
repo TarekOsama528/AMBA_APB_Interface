@@ -1,0 +1,123 @@
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 21:58:58 on Jun 01,2026
+# vlog -reportprogress 300 -f src_files.list "+cover" -covercells 
+# -- Compiling interface APB_if
+# -- Compiling module APB_slave
+# -- Compiling module APB_Master
+# -- Compiling module APB
+# ** Note: (vlog-2286) sva.sv(2): Using implicit +incdir+D:/questasim_2021/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package sva_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling module sva
+# -- Compiling package APB_configuration
+# -- Compiling package APB_sequence_item
+# -- Compiling package reset_sequence
+# -- Importing package APB_sequence_item
+# ** Warning: reset_seq.sv(18): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling package main_sequence
+# -- Compiling package APB_sequencer
+# -- Compiling package APB_drive
+# -- Importing package APB_configuration
+# -- Compiling package APB_monitor_pkg
+# -- Compiling package APB_agtt
+# -- Importing package APB_drive
+# -- Importing package APB_sequencer
+# -- Importing package APB_monitor_pkg
+# -- Compiling package APB_scoreborad_pck
+# -- Compiling package APB_coverage_pkg
+# ** Warning: APB_coverage.sv(44): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# -- Compiling package APB_env_pac
+# -- Importing package APB_agtt
+# -- Importing package APB_coverage_pkg
+# -- Importing package APB_scoreborad_pck
+# -- Compiling package APB_test_pkg
+# -- Importing package APB_env_pac
+# -- Importing package reset_sequence
+# -- Importing package main_sequence
+# -- Compiling package APB_top_sv_unit
+# -- Importing package APB_test_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 21:58:58 on Jun 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.top -classdebug -uvmcontrol=all -coverage 
+# Start time: 21:58:58 on Jun 01,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: APB_coverage.sv(44): (vopt-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# ** Warning: reset_seq.sv(18): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Note: (vopt-143) Recognized 1 FSM in module "APB_Master(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.APB_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.APB_sequence_item(fast)
+# Loading work.main_sequence(fast)
+# Loading work.reset_sequence(fast)
+# Loading work.APB_scoreborad_pck(fast)
+# Loading work.APB_coverage_pkg(fast)
+# Loading work.APB_monitor_pkg(fast)
+# Loading work.APB_sequencer(fast)
+# Loading work.APB_configuration(fast)
+# Loading work.APB_drive(fast)
+# Loading work.APB_agtt(fast)
+# Loading work.APB_env_pac(fast)
+# Loading work.APB_test_pkg(fast)
+# Loading work.APB_top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.APB_if(fast__2)
+# Loading work.APB(fast)
+# Loading work.APB_Master(fast)
+# Loading work.APB_slave(fast)
+# Loading work.sva_sv_unit(fast)
+# Loading work.sva(fast)
+# Loading D:/questasim_2021/uvm-1.1d\win64\uvm_dpi.dll
+# Break key hit
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: osama  Hostname: LAPTOP-CSMG40TJ  ProcessID: 35488
+#           Attempting to use alternate WLF file "./wlftidexdy".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftidexdy
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# Simulation stop requested.
+# Saving coverage database on exit...
+# End time: 21:59:15 on Jun 01,2026, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 4

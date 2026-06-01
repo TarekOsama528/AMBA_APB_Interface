@@ -1,0 +1,452 @@
+$date
+	Mon Jun  1 20:15:13 2026
+$end
+$version
+	QuestaSim Version 2021.1
+$end
+$timescale
+	1ns
+$end
+
+$scope module APB_tb $end
+
+$scope module dut $end
+$var wire 1 ! PCLK $end
+$var wire 1 " PRESETn $end
+$var wire 1 # transfer $end
+$var wire 1 $ PSTRB_in $end
+$var wire 1 % READ_WRITE $end
+$var wire 1 & apb_write_paddr [7] $end
+$var wire 1 ' apb_write_paddr [6] $end
+$var wire 1 ( apb_write_paddr [5] $end
+$var wire 1 ) apb_write_paddr [4] $end
+$var wire 1 * apb_write_paddr [3] $end
+$var wire 1 + apb_write_paddr [2] $end
+$var wire 1 , apb_write_paddr [1] $end
+$var wire 1 - apb_write_paddr [0] $end
+$var wire 1 . apb_write_data [7] $end
+$var wire 1 / apb_write_data [6] $end
+$var wire 1 0 apb_write_data [5] $end
+$var wire 1 1 apb_write_data [4] $end
+$var wire 1 2 apb_write_data [3] $end
+$var wire 1 3 apb_write_data [2] $end
+$var wire 1 4 apb_write_data [1] $end
+$var wire 1 5 apb_write_data [0] $end
+$var wire 1 6 apb_read_paddr [7] $end
+$var wire 1 7 apb_read_paddr [6] $end
+$var wire 1 8 apb_read_paddr [5] $end
+$var wire 1 9 apb_read_paddr [4] $end
+$var wire 1 : apb_read_paddr [3] $end
+$var wire 1 ; apb_read_paddr [2] $end
+$var wire 1 < apb_read_paddr [1] $end
+$var wire 1 = apb_read_paddr [0] $end
+$var wire 1 > prdata [7] $end
+$var wire 1 ? prdata [6] $end
+$var wire 1 @ prdata [5] $end
+$var wire 1 A prdata [4] $end
+$var wire 1 B prdata [3] $end
+$var wire 1 C prdata [2] $end
+$var wire 1 D prdata [1] $end
+$var wire 1 E prdata [0] $end
+$var wire 1 F PREADY $end
+$var wire 1 G PWRITE $end
+$var wire 1 H PSEL1 $end
+$var wire 1 I PENABLE $end
+$var wire 1 J PSTRB_out $end
+$var wire 8 K paddr [7:0] $end
+$var wire 8 L pwdata [7:0] $end
+
+$scope module Master $end
+$var reg 8 M paddr [7:0] $end
+$var reg 8 N pwdata [7:0] $end
+$var reg 1 O PWRITE $end
+$var reg 1 P PSEL1 $end
+$var reg 1 Q PENABLE $end
+$var reg 1 R PSTRB_out $end
+$var reg 2 S PS [1:0] $end
+$var reg 2 T NS [1:0] $end
+$upscope $end
+
+$scope module Slave $end
+$var reg 8 U prdata [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 M
+b0 N
+0O
+0P
+0Q
+0R
+b0 S
+b0 T
+b0 U
+b0 K
+b0 L
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0F
+0G
+0H
+0I
+0J
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+1$
+0#
+0"
+0!
+$end
+#5
+1!
+#10
+0!
+#15
+1"
+1!
+#20
+0!
+#25
+14
+1/
+1)
+1%
+1#
+1!
+b1 T
+#30
+0!
+#35
+1!
+b1 S
+1P
+b10000 M
+b1000010 N
+1O
+1R
+1H
+b1000010 L
+b10000 K
+1G
+1J
+b10 T
+#40
+0!
+#45
+0#
+1!
+b10 S
+1Q
+1I
+1F
+b0 T
+#50
+0!
+#55
+1!
+b0 S
+0P
+0Q
+0H
+0I
+0F
+#60
+0!
+#65
+1!
+#70
+0!
+#75
+19
+0%
+1#
+1!
+b1 T
+#80
+0!
+#85
+1!
+b1 S
+1P
+0O
+1H
+0G
+b10 T
+#90
+0!
+#95
+0#
+1!
+b1000010 U
+b10 S
+1Q
+1D
+1?
+1I
+1F
+b0 T
+#100
+0!
+#105
+1!
+b0 S
+0P
+0Q
+0H
+0I
+0F
+#110
+0!
+#115
+1!
+#120
+0!
+#125
+15
+12
+10
+0/
+1.
+0)
+1(
+1%
+1#
+1!
+b1 T
+#130
+0!
+#135
+1!
+b1 S
+1P
+b100000 M
+b10101011 N
+1O
+1H
+b10101011 L
+b100000 K
+1G
+b10 T
+#140
+0!
+#145
+0#
+1!
+b10 S
+1Q
+1I
+1F
+b0 T
+#150
+0!
+#155
+1!
+b0 S
+0P
+0Q
+0H
+0I
+0F
+#160
+0!
+#165
+1!
+#170
+0!
+#175
+09
+18
+0%
+1#
+1!
+b1 T
+#180
+0!
+#185
+1!
+b1 S
+1P
+0O
+1H
+0G
+b10 T
+#190
+0!
+#195
+0#
+1!
+b10101011 U
+b10 S
+1Q
+1E
+1B
+1@
+0?
+1>
+1I
+1F
+b0 T
+#200
+0!
+#205
+1!
+b0 S
+0P
+0Q
+0H
+0I
+0F
+#210
+0!
+#215
+1!
+#220
+0!
+#225
+04
+13
+02
+11
+00
+1/
+0.
+1-
+1,
+1+
+1*
+1)
+1'
+1&
+1%
+0$
+1#
+1!
+b1 T
+#230
+0!
+#235
+1!
+b1 S
+1P
+b11111111 M
+b1010101 N
+1O
+0R
+1H
+b1010101 L
+b11111111 K
+1G
+0J
+b10 T
+#240
+0!
+#245
+0#
+1!
+b10 S
+1Q
+1I
+1F
+b0 T
+#250
+0!
+#255
+1!
+b0 S
+0P
+0Q
+0H
+0I
+0F
+#260
+0!
+#265
+1!
+#270
+0!
+#275
+1=
+1<
+1;
+1:
+19
+17
+16
+0%
+1#
+1!
+b1 T
+#280
+0!
+#285
+1!
+b1 S
+1P
+0O
+1H
+0G
+b10 T
+#290
+0!
+#295
+0#
+1!
+b0 U
+b10 S
+1Q
+0E
+0D
+0B
+0@
+0>
+1I
+1F
+b0 T
+#300
+0!
+#305
+1!
+b0 S
+0P
+0Q
+0H
+0I
+0F
+#310
+0!
+#315
+1!
+#320
+0!
